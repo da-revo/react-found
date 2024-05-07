@@ -11,9 +11,15 @@
             return (<h1>Develop. Preview. Ship.</h1>)
         }
 
+        function HomePage() {
+            return <div>
+                <Header />
+            </div>;
+        }
+
         const app = document.getElementById('app');
         const root = ReactDOM.createRoot(app);
-        root.render(<Header />);
+        root.render(<HomePage />);
     </script>
 </body>
 
